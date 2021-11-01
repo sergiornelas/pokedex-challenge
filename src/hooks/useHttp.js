@@ -5,6 +5,7 @@ export const useHttp = () => {
   const [pokeArray, setPokeArray] = useState([]);
 
   const getPokeData = async () => {
+    //HERE
     setPokeArray([]);
     try {
       const jsonData = await fetch(URL);
