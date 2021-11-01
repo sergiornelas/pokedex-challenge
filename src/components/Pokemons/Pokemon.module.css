@@ -1,0 +1,9 @@
+.pokemon {
+  padding: 20px;
+  width: 310px;
+  text-align: center;
+}
+
+.pokemon :hover {
+  background-color: lightgray;
+}

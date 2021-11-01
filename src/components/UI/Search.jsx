@@ -1,19 +1,17 @@
 import { Fragment, useRef } from "react";
 import { useDispatch } from "react-redux";
 import { getSearchInput } from "../../store/pokemon-slice";
-// import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const Search = () => {
   const searchRef = useRef();
   const dispatch = useDispatch();
-  // const [pokemonUrl, setPokemonUrl] = useState("");
+  const history = useHistory();
 
-  // let input;
   const searchHandler = () => {
     const input = searchRef.current.value;
-    // setPokemonUrl(input);
     dispatch(getSearchInput(input));
-    // <Link to={`/:${input}`}>Welcome</Link>;
+    history.push(`/${input}`);
   };
 
   return (

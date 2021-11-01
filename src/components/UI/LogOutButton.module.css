@@ -1,0 +1,18 @@
+.logOutButton {
+  padding: 15px;
+  text-align: center;
+  color: #f2f4ff;
+  font-weight: bold;
+  background-color: Blue;
+  border-radius: 6px;
+  box-shadow: 0px;
+  width: 200px;
+}
+
+.logOutButton :hover {
+  background-color: Gray;
+}
+
+.logOutIcon {
+  width: 15%;
+}

@@ -1,0 +1,17 @@
+.menu {
+  height: 100%;
+  width: 220px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #566cd6;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.logoImg {
+  height: 5%;
+  margin-bottom: 45px;
+  margin-left: center;
+  vertical-align: middle;
+}
