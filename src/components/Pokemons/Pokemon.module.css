@@ -1,9 +1,16 @@
 .pokemon {
-  padding: 20px;
-  width: 310px;
+  padding-bottom: 17px;
   text-align: center;
+  width: 200px;
+  margin: 10px;
 }
 
-.pokemon :hover {
-  background-color: lightgray;
+.imageListElement {
+  height: 60%;
+  width: 60%;
+  margin-bottom: 20px;
 }
+
+/* .pokemon :hover { */
+/*   background-color: lightgray; */
+/* } */

@@ -1,6 +1,6 @@
 .menu {
   height: 100%;
-  width: 220px;
+  width: 25%;
   position: fixed;
   top: 0;
   left: 0;
@@ -10,7 +10,7 @@
 }
 
 .logoImg {
-  height: 5%;
+  height: 7%;
   margin-bottom: 45px;
   margin-left: center;
   vertical-align: middle;

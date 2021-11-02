@@ -1,5 +1,5 @@
 .profileImg {
-  width: 70%;
+  width: 50%;
 }
 
 .info {
@@ -8,8 +8,16 @@
 
 .userName {
   color: white;
+  margin: 15px;
 }
 
-.userInfo {
+.userLevel {
+  margin: 15px;
   color: #f2f4ff;
+  font-size: 0.9rem;
+}
+
+.userQuote {
+  color: #f2f4ff;
+  font-size: 0.8rem;
 }

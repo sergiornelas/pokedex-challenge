@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
@@ -7,18 +6,16 @@ import SinglePokemon from "../src/pages/SinglePokemon";
 
 function App() {
   return (
-    <Fragment>
-      <Layout>
-        <Switch>
-          <Route path="/" exact>
-            <AllPokemon />
-          </Route>
-          <Route path="/:pokeId">
-            <SinglePokemon />
-          </Route>
-        </Switch>
-      </Layout>
-    </Fragment>
+    <Layout>
+      <Switch>
+        <Route path="/" exact>
+          <AllPokemon />
+        </Route>
+        <Route path="/:pokeId">
+          <SinglePokemon />
+        </Route>
+      </Switch>
+    </Layout>
   );
 }
 // <Route path="*">

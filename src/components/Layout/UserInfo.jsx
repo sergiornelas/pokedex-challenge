@@ -7,8 +7,8 @@ const UserInfo = () => {
       <img className={classes.profileImg} src={userPic} alt="Ash" />
       <div>
         <h1 className={classes.userName}>ASHK123</h1>
-        <h3 className={classes.userInfo}>Level 1</h3>
-        <p className={classes.userInfo}>"Work hard on your test"</p>
+        <h3 className={classes.userLevel}>Level 1</h3>
+        <p className={classes.userQuote}>"Work hard on your test"</p>
       </div>
     </section>
   );

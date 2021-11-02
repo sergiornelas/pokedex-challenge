@@ -1,9 +1,10 @@
-import { Fragment, useEffect } from "react";
+import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchPokemonData } from "../../store/pokemon-api-requests";
 import { pokemonList } from "../../store/pokemon-slice";
 import { useHttp } from "../../hooks/useHttp";
 import Pokemon from "../Pokemons/Pokemon";
+import classes from "./PokemonList.module.css";
 
 const PokemonList = () => {
   const dispatch = useDispatch();
@@ -16,7 +17,7 @@ const PokemonList = () => {
   }, [dispatch, pokeArray]);
 
   return (
-    <Fragment>
+    <main className={classes.canvas}>
       {pokemonData.map((item) => {
         return (
           <Pokemon
@@ -34,7 +35,7 @@ const PokemonList = () => {
           >{`${item.id}, ${item.name}`}</Pokemon>
         );
       })}
-    </Fragment>
+    </main>
   );
 };
 

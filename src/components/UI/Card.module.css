@@ -1,9 +1,12 @@
 .card {
-  background-color: white;
   margin: 0.5rem;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  border-radius: 5px;
-  box-shadow: 1px 1px 3px 0.5px darkgray;
+  /* cursor: pointer; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  border-radius: 16px;
+  box-shadow: 0.5px 0.5px 5px 0.2px rgba(86, 108, 214, 0.5);
+}
+
+.card__list :hover {
+  background-color: lightgray;
 }

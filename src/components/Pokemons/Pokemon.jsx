@@ -34,7 +34,11 @@ const Pokemon = (props) => {
       <div onClick={showPokDetail} className={classes.pokemon}>
         <h2>{name}</h2>
         {pokeNumber}
-        <img src={default_img} alt="name" style={{ width: "50%" }} />
+        <img
+          src={default_img}
+          alt="name"
+          className={classes.imageListElement}
+        />
         {pokeTypes}
       </div>
     </Card>
