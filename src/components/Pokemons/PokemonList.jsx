@@ -8,6 +8,7 @@ import Pokemon from "../Pokemons/Pokemon";
 const PokemonList = () => {
   const dispatch = useDispatch();
   const pokemonData = useSelector(pokemonList);
+
   const pokeArray = useHttp();
 
   useEffect(() => {

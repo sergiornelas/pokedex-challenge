@@ -5,8 +5,6 @@ export const useHttp = () => {
   const [pokeArray, setPokeArray] = useState([]);
 
   const getPokeData = async () => {
-    //HERE
-    setPokeArray([]);
     try {
       const jsonData = await fetch(URL);
       const cleanData = await jsonData.json();
@@ -27,6 +25,7 @@ export const useHttp = () => {
           front_shiny: data.sprites.front_shiny,
           back_shiny: data.sprites.back_shiny,
         };
+        console.log(obj);
         setPokeArray((prev) => [...prev, obj]);
       });
     } catch (error) {
@@ -38,5 +37,6 @@ export const useHttp = () => {
     getPokeData();
   }, []);
 
+  console.log("nuevo!");
   return pokeArray;
 };
