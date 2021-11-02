@@ -1,10 +1,9 @@
 import { Fragment } from "react";
 import "./App.css";
-import PokemonList from "./components/Pokemons/PokemonList";
-import PokemonDetail from "./components/Pokemons/PokemonDetail";
-// import Search from "../src/components/UI/Search";
 import { Route, Switch } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
+import AllPokemon from "../src/pages/AllPokemon";
+import SinglePokemon from "../src/pages/SinglePokemon";
 
 function App() {
   return (
@@ -12,10 +11,10 @@ function App() {
       <Layout>
         <Switch>
           <Route path="/" exact>
-            <PokemonList />
+            <AllPokemon />
           </Route>
           <Route path="/:pokeId">
-            <PokemonDetail />
+            <SinglePokemon />
           </Route>
         </Switch>
       </Layout>
