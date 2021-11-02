@@ -1,0 +1,13 @@
+.pokemonAppereance {
+  text-align: center;
+  width: 200px;
+  margin: 10px;
+  cursor: pointer;
+  display: block;
+}
+
+.imageAppereance {
+  height: 60%;
+  width: 60%;
+  margin-bottom: 20px;
+}

@@ -1,2 +1,17 @@
+.pokemonInformation {
+  text-align: left;
+  padding: 15px;
+}
 
+.infoP {
+  font-weight: bold;
+}
 
+.shinyImg {
+  width: 30%;
+}
+
+.infoName {
+  font-size: 1.8rem;
+  margin: 15px 0px;
+}

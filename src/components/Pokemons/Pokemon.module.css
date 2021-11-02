@@ -3,6 +3,7 @@
   text-align: center;
   width: 200px;
   margin: 10px;
+  cursor: pointer;
 }
 
 .imageListElement {
@@ -10,7 +11,3 @@
   width: 60%;
   margin-bottom: 20px;
 }
-
-/* .pokemon :hover { */
-/*   background-color: lightgray; */
-/* } */

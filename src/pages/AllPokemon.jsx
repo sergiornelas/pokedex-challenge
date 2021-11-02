@@ -1,10 +1,10 @@
 import PokemonList from "../components/Pokemons/PokemonList";
-import Search from "../components/UI/Search";
+import NavBar from "../components/UI/NavBar";
 
 const AllPokemon = () => {
   return (
     <>
-      <Search />
+      <NavBar />
       <PokemonList />
     </>
   );

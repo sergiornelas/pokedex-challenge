@@ -1,0 +1,28 @@
+.nav {
+  margin: 15px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.searchSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.search {
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0.5px 0.5px 5px 0.2px rgba(86, 108, 214, 0.5);
+  padding-left: 12px;
+}
+
+.blueButton {
+  border-radius: 16px;
+  background-color: #566cd6;
+  border: none;
+  z-index: 5;
+  position: relative;
+  cursor: pointer;
+}

@@ -1,4 +1,15 @@
 #root {
   margin-left: 25%;
   color: #40415e;
+  padding: 0px 50px;
+}
+
+::placeholder {
+  text-align: start;
+  color: rgba(64, 65, 94, 0.5);
+  font-size: 0.7rem;
+}
+
+hr {
+  border: 0.1px solid lightgray;
 }
