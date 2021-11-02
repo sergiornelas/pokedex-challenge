@@ -13,7 +13,8 @@ const NavBar = () => {
   const history = useHistory();
 
   const searchHandler = () => {
-    const input = searchRef.current.value;
+    let input = searchRef.current.value;
+    input = input.charAt(0).toLowerCase() + input.slice(1);
     dispatch(getSearchInput(input));
     history.push(`/${input}`);
   };
