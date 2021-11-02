@@ -16,3 +16,9 @@
   vertical-align: middle;
   cursor: pointer;
 }
+
+@media (max-width: 770px) {
+  .menu {
+    display: none;
+  }
+}

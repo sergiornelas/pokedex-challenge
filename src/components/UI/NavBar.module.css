@@ -16,13 +16,26 @@
   border: none;
   box-shadow: 0.5px 0.5px 5px 0.2px rgba(86, 108, 214, 0.5);
   padding-left: 12px;
+  height: 30px;
 }
 
-.blueButton {
+.blueButton,
+.searchBlueButton {
   border-radius: 16px;
   background-color: #566cd6;
   border: none;
-  z-index: 5;
   position: relative;
   cursor: pointer;
+}
+
+@media (max-width: 770px) {
+  .searchBlueButton {
+    display: none;
+  }
+  .search {
+    width: 70%;
+  }
+  .nav {
+    margin: 0;
+  }
 }

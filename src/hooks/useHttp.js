@@ -28,7 +28,8 @@ export const useHttp = () => {
         setPokeArray((prev) => [...prev, obj]);
       });
     } catch (error) {
-      console.log("haha todo tronco xd", error);
+      alert("API request failed");
+      console.log(error);
     }
   };
 

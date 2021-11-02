@@ -14,8 +14,8 @@ const PokemonAppearance = (props) => {
             alt={name}
           />
           <br />
-          <img src={front_img} alt={name} style={{ width: "50%" }} />
-          <img src={back_img} alt={name} style={{ width: "50%" }} />
+          <img src={front_img} alt={name} className={classes.iconAppereance} />
+          <img src={back_img} alt={name} className={classes.iconAppereance} />
         </div>
       </Card>
     </div>

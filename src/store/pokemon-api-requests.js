@@ -1,5 +1,6 @@
 import { fetchPokemonList } from "./pokemon-slice";
 import { fetchUrlPokemon } from "./pokemon-slice";
+
 const URL = "https://pokeapi.co/api/v2/pokemon";
 
 export const fetchPokemonData = (pokeArray) => {
@@ -30,6 +31,9 @@ export const fetchSinglePokemon = (input) => {
       .then((sendObj) => {
         dispatch(fetchUrlPokemon(sendObj));
       })
-      .catch((error) => console.log("pon un mono correcto mi estimado", error));
+      .catch((error) => {
+        console.log(error);
+        alert("Write a correct pokemon name or ID");
+      });
   };
 };

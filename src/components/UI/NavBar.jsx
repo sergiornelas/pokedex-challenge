@@ -5,6 +5,7 @@ import { useHistory } from "react-router-dom";
 import classes from "./NavBar.module.css";
 import searchIcon from "../../assets/Icons/Search.svg";
 import backIcon from "../../assets/Icons/Back.svg";
+import TopHeader from "../UI/TopHeader";
 
 const NavBar = () => {
   const searchRef = useRef();
@@ -23,9 +24,11 @@ const NavBar = () => {
 
   return (
     <nav className={classes.nav}>
-      <button onClick={backHome} className={classes.blueButton}>
-        <img style={{ width: "70%" }} src={backIcon} alt="search" />
+      <button onClick={backHome} className={classes.searchBlueButton}>
+        <img style={{ width: "100%" }} src={backIcon} alt="back" />
       </button>
+
+      <TopHeader />
 
       <section className={classes.searchSection}>
         <label htmlFor="search"></label>

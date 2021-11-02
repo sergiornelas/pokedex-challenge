@@ -2,6 +2,9 @@
   margin-left: 25%;
   color: #40415e;
   padding: 0px 50px;
+  zoom: 1.5;
+  -moz-transform: scale(3);
+  -moz-transform-origin: 0 0;
 }
 
 ::placeholder {
@@ -12,4 +15,11 @@
 
 hr {
   border: 0.1px solid lightgray;
+}
+
+@media (max-width: 770px) {
+  #root {
+    margin-left: 0;
+    padding: 0;
+  }
 }
